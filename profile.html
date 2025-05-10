@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Settings</title>
+    <link rel="stylesheet" href="./profile.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrapper-header">
+            <div class="align_header">
+                <h2 class="header-title">Account Settings</h2>
+            </div>
+            <div class="account-nav">
+                <button id="about-tab" class="Account-Information"> Account Information</button>
+                <button id="accounts-tab" class="Related-accounts">Related Accounts</button>
+            </div>
+        </div>
+        <div class="account-section">
+            <!--Basic Account Information section-->
+            <div class="section">
+                <h3>Basic Account Information</h3>
+                <p>These settings include basic information about your account</p>
+                <div class="account-section-body">
+                    <div class="field-username">
+                        <div class="field">
+                            <span class="field-label">Username</span>
+                        </div>
+                        <span class="field-massage-help">The name that identifies you in Square. You cannot change your username</span>
+                    </div>
+
+                    <div class="field-name">
+                        <div class="field-value">
+                            <label class="field-label">Full Name</label>
+                            <input class="input-text" placeholder="Username" id="field-input-name"
+                                title="input field for name" name="input" value>
+                        </div>
+                        <span class="field-massage">
+                            <span class="field-massage-help">The name that is used for ID verification and that appears on your certificates.</span>
+                        </span>
+                    </div>
+
+                    <div class="field-name-en">
+                        <div class="field-value">
+                            <label class="field-label">Full Name (In English)</label>
+                            <input class="input-text" placeholder="Full Name" id="field-input-name" name="input" value>
+                        </div>
+                        <span class="field-massage">
+                            <span class="field-massage-help">The name that is used for ID verification and that appears on your certificates.</span>
+                        </span>
+                    </div>
+
+                    <div class="field-email">
+                        <div class="field-value">
+                            <label class="field-label">Email Address (Sign In)</label>
+                            <input class="input-text" placeholder="Email">
+                        </div>
+                        <span class="field-massage" id="field-massage-email">
+                            <span class="field-massage-help">You receive messages from Square and course teams at this address.</span>
+                        </span>
+                    </div>
+
+                    <div class="field-password">
+                        <div class="field-value">
+                            <span class="field-label">Password</span>
+                            <button class="field-link-password" id="field-link-password">Reset Your Password</button>
+                        </div>
+                        <span class="field-massage" id="field-massage-password">
+                            <span class="field-massage-help">Check your email account for instructions to reset your password.</span>
+                        </span>
+                    </div>
+
+                    <div class="field-country">
+                        <div class="field-value">
+                            <div class="edit"></div>
+                            <select name="select">
+                                <option value="" disabled selected>Choose Your Coutntry</option>
+                                <option value="EG">Cairo</option>
+                                <option value="AL">Alex</option>
+                                <option value="QN">Qena</option>
+                                <option value="HG">Hurgada</option>
+                            </select>
+                        </div>
+                        <span class="field-massage">
+                            <span class="field-massage-help">The country where you live.</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        <!--Additional Information section-->
+            <div class="section">
+                <h3 class="section-header">Additional Information</h3>
+                <div class="account-section-body">
+                    <div class="field-drobdown-level-of-education">
+                        <div class="field-value">
+                            <select name="select" for="select-level-of-education">
+                                <option value="" disabled selected>Choose Your Education Completed</option>
+                                <option value="p">Doctorate</option>
+                                <option value="m">Master's or professional degree</option>
+                                <option value="b">Bachelor's degree</option>
+                                <option value="a">Associate degree</option>
+                                <option value="hs">Secondary/high school</option>
+                                <option value="jhs">Junior secondary/junior high/middle school</option>
+                                <option value="el">Elementary/primary school</option>
+                                <option value="none">No formal education</option>
+                                <option value="other">Other education</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="field-drobdown-gender">
+                        <div class="field-value">
+                            <select name="select" id="field-select-gender">
+                                <option value="" selected disabled>Choose Your Gender</option>
+                                <option value="m">Male</option>
+                                <option value="f">Female</option>
+                                <option value="o">Other/Prefer Not to Say</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="field-drobdown-year-of-birth">
+                        <div class="field-value">
+                            <label class="field-label">Birth Date</label>
+                            <input type="date" name="" Birth Date class="BD">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!--Social Media Links section-->
+            <div class="section">
+                <h3 class="section-header">Social Media Links</h3>
+                <p class="account-settings-header-subtitle">Optionally, link your personal accounts to the social media icons on your edX profile.</p>
+                <div class="account-settings-section-body">
+                    <div class="field-social-links">
+                        <div class="field-value">
+                            <label class="field-label" for="field-input-social_links_facebook">Facebook Link</label>
+                            <input class="input-text" placeholder="https://www.facebook.com/username" type="text" id="field-input-social_links_facebook" title="Input field for social_links_facebook" name="input" value="">
+                        </div>
+                        <span class="field-massage" id="field-massage-social_links_facebook">
+                            <span class="field-massage-notification"></span>
+                            <span class="field-massage-help" id="u-field-massage-help-social_links_facebook">Enter your Facebook username or the URL to your Facebook page.</span>
+                        </span>
+                    </div>
+
+                    <div class="field-social-links">
+                        <div class="field-value">
+                            <label class="field-label" for="field-input-social_links_twitter">Twitter Link</label>
+                            <input class="input-text" placeholder="https://www.twitter.com/username" type="text" id="field-input-social_links_twitter" title="Input field for social_links_twitter" name="input" value="">
+                        </div>
+                        <span class="field-massage" id="field-massage-social_links_twitter">
+                            <span class="field-massage-notification"></span>
+                            <span class="field-massage-help" id="field-massage-help-social_links_twitter">Enter your Twitter username or the URL to your Twitter page.</span>
+                        </span>
+                    </div>
+
+                    <div class="field-social-links">
+                        <div class="field-value">
+                            <label class="field-label" for="field-input-social_links_linkedin">LinkedIn Link</label>
+                            <input class="input-text" placeholder="www.linkedin.com/in/username" type="text" id="field-input-social_links_linkedin" title="Input field for social_links_linkedin" name="input" value="">
+                        </div>
+                        <span class="field-massage" id="field-massage-social_links_linkedin">
+                            <span class="field-massage-notification"></span>
+                            <span class="field-massage-help" id="field-massage-help-social_links_linkedin">Enter your LinkedIn username or the URL to your LinkedIn page</span>
+                        </span>
+                        <div>
+                            <a href="../main_page-f/s.html" class="buttonn">Save</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+
+</html>

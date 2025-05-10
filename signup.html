@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Signup Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <div class="text">
+                <span class="text-1">Welcome to </span>
+                <br>
+                <span class="text-2">Square</span>
+            </div>
+        </div>
+        <div class="signup-form">
+            <div class="title">Signup</div>
+            <form id="signupForm">
+                <div class="input-boxes">
+                    <div class="input-box">
+                        <i class="fas fa-user"></i>
+                        <input id="firstName" type="text" placeholder="First Name" required>
+                    </div>
+                    <div class="input-box">
+                        <i class="fas fa-user"></i>
+                        <input id="lastName" type="text" placeholder="Last Name" required>
+                    </div>
+                    <div class="input-box">
+                        <i class="fas fa-envelope"></i>
+                        <input id="email" type="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="input-box">
+                        <i class="fas fa-venus-mars"></i>
+                        <select id="gender" required>
+                            <option value="" disabled selected>Select Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                    <div class="input-box">
+                        <i class="fas fa-phone-alt"></i>
+                        <div class="phone-input">
+                            <input id="phoneNumber" type="tel" placeholder="Phone Number" required>
+                        </div>
+                    </div>
+                    <div class="input-box">
+                        <i class="fas fa-calendar-alt"></i>
+                        <input id="dob" type="date" placeholder="Date of Birth" required>
+                    </div>
+                    <div class="input-box">
+                        <i class="fas fa-lock"></i>
+                        <input id="password" type="password" placeholder="Password" required>
+                    </div>
+                    <div class="input-box">
+                        <i class="fas fa-lock"></i>
+                        <input id="confirmPassword" type="password" placeholder="Confirm Password" required>
+                    </div>
+                    <div class="button input-box">
+                        <a href="../main_page-f/s.html"><input type="submit" value="Submit"></a>
+                    </div>
+                    <div class="text sign-up-text">Already have an account? <a href="../login_page/index (1).html">Login now</a></div>
+
+            </form>
+            <div class="social-icons">
+                <a href="#" class="google"><i class="fab fa-google"></i> Sign up with Google</a>
+                <a href="#" class="facebook"><i class="fab fa-facebook"></i> Sign up with Facebook</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- International Telephone Input JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"></script>
+    <script src="script (9).js"></script>
+</body>
+</html>

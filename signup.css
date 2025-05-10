@@ -1,0 +1,211 @@
+/* Google Font Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(247,236,216);
+    padding: 30px;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 850px;
+    height: 100%;
+    background: white; /* Same color as left-section */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    overflow: hidden; /* Ensure rounded corners are applied properly */
+}
+
+.left-section {
+    width: 33.33%; /* 1/3 of container width */
+    background: linear-gradient(135deg, orange 0%, #f5ecd5 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 20px 0 0 20px; /* Rounded corners on the left side */
+}
+
+.left-section .text {
+    text-align: center;
+    color: #fff;
+}
+
+.left-section .text-1 {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.left-section .text-2 {
+    font-size: 26px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.signup-form {
+    width: calc(66.66% - 40px); /* 2/3 of container width minus padding */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #fff; /* White background */
+    border-radius: 0 20px 20px 0; /* Rounded corners on the right side */
+}
+
+.signup-form .title {
+    position: relative;
+    font-size: 24px;
+    font-weight: 500;
+    color: #333;
+}
+
+.signup-form .title:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 20px;
+    background: orange; /* Changed underline color to orange */
+}
+
+.input-boxes {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.input-box {
+    flex: 0 0 calc(50% - 10px);
+    margin: 10px 5px;
+    position: relative;
+}
+
+.input-box input,
+.input-box select {
+    width: 100%; /* Set width to 100% */
+    height: 50px; /* Fixed height */
+    padding: 15px; /* Increased padding */
+    appearance: none; /* Remove default dropdown arrow */
+    background: #f9f9f9; /* Background color */
+    border: 1px solid #ccc; /* Border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Password and Confirm Password input styles */
+.input-box input[type="password"],
+.input-box input[type="tel"] {
+    width: 100%; /* Set width to 100% */
+    height: 50px; /* Fixed height */
+    padding: 15px; /* Increased padding */
+    background: #f9f9f9; /* Background color */
+    border: 1px solid #ccc; /* Border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Button input styles */
+.input-box input[type="submit"] {
+    width: 205%; /* Set width to 100% */
+    height: 60px; /* Increased height */
+    padding: 20px; /* Increased padding */
+    background: orange; /* Changed background color to orange */
+    border: none;
+    border-radius: 5px;
+    color: white; /* Changed text color to white */
+    font-size: 18px; /* Increased font size */
+    cursor: pointer;
+}
+
+.input-box input[type="submit"]:hover {
+    background: rgb(240,224,198); /* Changed hover background color */
+}
+
+.input-box i {
+    display: none; /* Hide the logo */
+}
+
+.input-box select:focus,
+.input-box input:focus {
+    outline: none; /* Remove outline on focus */
+    border-color: #7d2ae8; /* Change border color on focus */
+}
+
+.signup-form .text {
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+
+.signup-form .text a {
+    text-decoration: none;
+}
+
+/* Text styles */
+.text {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+
+.sign-up-text {
+    margin-top: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.sign-up-text a {
+    color: #7d2ae8;
+    text-decoration: none;
+}
+
+.sign-up-text a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social-icons .social-button {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    background-color: #4285f4; /* Google Blue */
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.social-icons .facebook {
+    background-color: #3b5998; /* Facebook Blue */
+}
+
+.social-icons a:hover {
+    background-color: #1a73e8; /* Google Dark Blue / Facebook Dark Blue */
+}
+
+/* Style for separator */
+.separator {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+}
